@@ -1,3 +1,5 @@
+const treeModule = require('./tree-output.js');
+
 function main() {
   const tree = {
     'name': 1,
@@ -9,35 +11,8 @@ function main() {
       'items': [{'name': 6, 'items': [{'name': 7}]}]
     }]
   };
-  outputNode(tree);
-}
-
-function outputNode(node, level = 0, last, lastLeaf = true) {
-  let pad = Array(level*2).fill("");
-  let corner = '├';
-  let pipe = '│';
-  if (last) corner = '└';
-  if (lastLeaf)  pipe = ' ';
-
-  pad = pad.map((e, i, p) => {
-    if (i === p.length - 2) {
-      return corner;
-    }
-    if (i === p.length - 1) {
-      return '-';
-    }
-    if (0 === (i+1)%2) {
-      return ' ';
-    }
-    return pipe;
-  });
-
-  console.log(pad.join('') + node.name);
-  if (node.items) {
-    node.items.forEach((element, i, arr) => {
-      outputNode(element, level + 1, i === arr.length - 1, lastLeaf && i === arr.length - 1 );
-    });
-  }
+  const treeDrawer1 = new treeModule.TreeDrawer();
+  treeDrawer1.drawTree(tree);
 }
 
 main();
