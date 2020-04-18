@@ -1,0 +1,16 @@
+{
+  "name": "gabdushev-ilnur-otus",
+  "version": "1.0.0",
+  "description": "otus tree homework",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilnoor/gabdushev-ilnur-otus.git"
+  },
+  "author": "i.gabdushev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilnoor/gabdushev-ilnur-otus/issues"
+  },
+  "homepage": "https://github.com/ilnoor/gabdushev-ilnur-otus#readme"
+}
