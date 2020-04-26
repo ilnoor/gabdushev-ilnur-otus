@@ -25,6 +25,7 @@ function main() {
   for (let i = 3; i < process.argv.length - 1; i++) {
     if ('--depth' === process.argv[i] || '-d' === process.argv[i]) {
       maxDepth = process.argv[i + 1];
+      break;
     }
   }
   const treeDrawer1 = new treeModule.TreeDrawer();
