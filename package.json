@@ -2,7 +2,7 @@
   "name": "gabdushev-ilnur-otus",
   "version": "1.0.0",
   "description": "otus tree homework",
-  "main": "server.js",
+  "bin": "server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ilnoor/gabdushev-ilnur-otus.git"
