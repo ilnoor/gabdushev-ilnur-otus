@@ -28,8 +28,8 @@ function main() {
       break;
     }
   }
-  const treeDrawer1 = new treeModule.TreeDrawer();
-  treeDrawer1.drawTree(getDirObj(pathToDraw, maxDepth));
+  const treeDrawer = new treeModule.TreeDrawer();
+  treeDrawer.drawTree(getDirObj(pathToDraw, maxDepth));
 }
 
 main();
